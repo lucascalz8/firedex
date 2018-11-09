@@ -1,0 +1,24 @@
+package edu.uci.ics.model.web;
+
+public class WebEvent {
+	private String publisher;
+	private long identifier;
+	private String topic;
+	private int port;
+	private long sent;
+	private long received;
+	private long latency;
+	
+	public WebEvent(String publisher, long identifier, String topic, int port, long sent, long received, long latency) {
+		this.publisher = publisher;
+		this.identifier = identifier;
+		this.topic = topic;
+		this.port = port;
+		this.sent = sent;
+		this.received = received;
+		this.latency = latency;
+	}
+
+	
+
+}

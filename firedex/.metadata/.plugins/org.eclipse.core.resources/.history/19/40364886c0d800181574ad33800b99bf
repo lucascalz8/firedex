@@ -1,0 +1,5 @@
+package edu.uci.ics.model;
+
+public class PublicationIntention {
+
+}

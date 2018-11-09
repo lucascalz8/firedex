@@ -1,0 +1,14 @@
+package edu.uci.ics.model;
+
+public class FiredexSubscriptionuns {
+	private String topic;
+	
+	public FiredexSubscriptionuns(String topic) {
+		this.topic = topic;
+	}
+	
+	public String getTopic() {
+		return (topic);
+	}
+	
+}

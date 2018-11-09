@@ -1,0 +1,39 @@
+package edu.uci.ics.model;
+
+import java.util.List;
+
+public class SubscriptionIntentionResponse {
+	private String identifier;
+	private String host;
+	private List<ModifiedFiredexSubscription> modifiedSubscriptions;
+	private List<NewFiredexSubscription> insertedSubscriptions;
+	
+	public SubscriptionIntentionResponse(
+										 String identifier, String host,
+										 List<ModifiedFiredexSubscription> modifiedSubscriptions,
+										 List<NewFiredexSubscription> newSubscriptions
+										)
+	{
+		this.identifier = identifier;
+		this.host = host;
+		this.modifiedSubscriptions = modifiedSubscriptions;
+		this.newSubscriptions = newSubscriptions;
+	}
+	
+	public String getIdentifier() {
+		return (identifier);
+	}
+	
+	public String getHost() {
+		return (host);
+	}
+	
+	public List<ModifiedFiredexSubscription> getModifiedSubscriptions() {
+		return (modifiedSubscriptions);
+	}
+	
+	public List<NewFiredexSubscription> getNewSubscriptions() {
+		return (newSubscriptions);
+	}
+	
+}

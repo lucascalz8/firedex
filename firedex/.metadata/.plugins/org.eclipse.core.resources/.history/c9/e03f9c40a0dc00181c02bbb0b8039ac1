@@ -1,0 +1,13 @@
+package edu.uci.ics.subscriber;
+
+import java.net.UnknownHostException;
+
+import org.java_websocket.server.WebSocketServer;
+
+public class SubscriberEndPoint extends WebSocketServer {
+
+	public SubscriberEndPoint(int port) throws UnknownHostException {
+		super();
+	}
+
+}

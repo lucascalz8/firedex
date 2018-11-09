@@ -1,0 +1,82 @@
+package edu.uci.ics.middleware;
+
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.JsonNode;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
+
+import edu.uci.ics.configuration.Configuration;
+import edu.uci.ics.exception.FiredexException;
+import edu.uci.ics.model.SubscriptionCompletedRequest;
+import edu.uci.ics.model.SubscriptionIntentionRequest;
+import edu.uci.ics.model.SubscriptionIntentionResponse;
+import edu.uci.ics.utility.JsonUtility;
+
+public class FiredexMiddleware {
+	private Configuration configuration;
+	private String baseApi;
+
+	public FiredexMiddleware(Configuration configuration) {
+		this.configuration = configuration;
+		this.baseApi = baseApi();
+	}
+
+	private String baseApi() {
+		String middlewareHost = configuration.getServer().getMiddleware().getHost();
+		int middlewarePort = configuration.getServer().getMiddleware().getPort();
+		String baseApi = String.format("http://%s:%d/api/firedex", middlewareHost, middlewarePort);
+		return (baseApi);
+	}
+	
+	public SubscriptionIntentionResponse subscriptionIntentionInsert(SubscriptionIntentionInsert subscriptionIntentionInsert) throws FiredexException {
+		
+	}
+	
+	public SubscriptionIntentionResponse subscriptionIntentionModify(SubscriptionIntentionInsert subscriptionIntentionInsert) throws FiredexException {
+		
+	}
+
+	public SubscriptionIntentionResponse subscriptionIntentionRemove(SubscriptionIntentionInsert subscriptionIntentionInsert) throws FiredexException {
+		
+	}
+
+	public SubscriptionIntentionResponse subscriptionIntentionRequest(SubscriptionIntentionRequest subscriptionIntentionRequest) throws FiredexException {
+		try {
+			String json = JsonUtility.toJson(subscriptionIntentionRequest);
+			
+			String url = baseApi + "/subscription-intention/";
+			
+			HttpResponse<JsonNode> response = Unirest
+					.post(url)
+					.header("Content-Type", "application/json")
+					.header("Accept", "application/json")
+					.body(json)
+					.asJson();
+			
+			json = response.getBody().toString();	
+			SubscriptionIntentionResponse subscriptionIntentionResponse = JsonUtility.fromJson(json, SubscriptionIntentionResponse.class);
+			return (subscriptionIntentionResponse);
+		} catch (UnirestException exception) {
+			throw ( new FiredexException() );
+		}
+	}
+	
+	public void subscriptionCompletedRequest(SubscriptionCompletedRequest subscriptionCompletedRequest) throws FiredexException {
+		try {
+			String json = JsonUtility.toJson(subscriptionCompletedRequest);
+			
+			String url = baseApi + "/subscription-completed/";
+			
+			Unirest
+				.post(url)
+				.header("Content-Type", "application/json")
+				.header("Accept", "application/json")
+				.body(json)
+				.asJson();
+			
+		} catch (UnirestException exception) {
+			throw ( new FiredexException() );
+		}
+	}
+
+}
