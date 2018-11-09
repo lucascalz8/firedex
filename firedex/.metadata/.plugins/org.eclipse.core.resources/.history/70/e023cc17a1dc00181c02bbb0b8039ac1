@@ -1,9 +1,0 @@
-package edu.uci.ics.subscriber.web;
-
-import edu.uci.ics.model.Event;
-
-public interface OnWebMessage {
-
-	public void onWebMessage(String topic, int port, Event event);
-	
-}

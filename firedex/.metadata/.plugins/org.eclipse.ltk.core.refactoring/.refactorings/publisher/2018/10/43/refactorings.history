@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;PublicationIntention.java&apos; to &apos;publisher/src/main/java/edu.uci.ics.model&apos;&#x0A;- Original project: &apos;publisher&apos;&#x0A;- Destination element: &apos;publisher/src/main/java/edu.uci.ics.model&apos;&#x0A;- Original element: &apos;edu.uci.ics.model.PublicationIntention.java&apos;" description="Copy compilation unit" destination="/src\/main\/java&lt;edu.uci.ics.model" element1="/src\/main\/java&lt;edu.uci.ics.model{PublicationIntention.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1540518231726" units="1" version="1.0"/>
-</session>

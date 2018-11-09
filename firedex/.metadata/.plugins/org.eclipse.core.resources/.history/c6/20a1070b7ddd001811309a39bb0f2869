@@ -1,9 +1,0 @@
-package edu.uci.ics.model.web;
-
-public class WebEvent {
-
-	public WebEvent(String publisher, long identifier, String topic, int port, long sent, long received, long latency) {
-		
-	}
-
-}

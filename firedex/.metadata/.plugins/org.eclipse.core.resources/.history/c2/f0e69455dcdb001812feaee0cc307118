@@ -1,7 +1,0 @@
-package edu.uci.ics.model;
-
-public class SubscriptionIntention {
-	private String topic;
-	private 
-
-}

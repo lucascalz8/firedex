@@ -1,7 +1,0 @@
-package edu.uci.ics.subscriber.web;
-
-public class WebRequest {
-	private String type;
-	private String content;
-
-}

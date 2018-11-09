@@ -1,7 +1,0 @@
-package edu.uci.ics.subscriber;
-
-import org.java_websocket.server.WebSocketServer;
-
-public class SubscriberEndPoint extends WebSocketServer {
-
-}
