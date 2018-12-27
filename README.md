@@ -247,8 +247,6 @@ The following images show the performance experienced by subscriptions with diff
 
 ![High priority subscription](https://github.com/lucascalz8/firedex/blob/master/documentation/dashboard.png)
 
-![Low priority subscription](https://github.com/lucascalz8/firedex/blob/master/documentation/dashboard-low-priority.png)
-
 ## References
 
 [1] https://hal.inria.fr/hal-01877555  
