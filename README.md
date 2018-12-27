@@ -214,9 +214,9 @@ The default configuration runs 10 subscribers with ρ = 1.5 (network load).
 
 The following images show the performance of the system (response time and success rate) of the default configuration.
 
-![Response time](https://github.com/boulouk/firedex/blob/master/documentation/static-response-time.png)
+![Response time](https://github.com/lucascalz8/firedex/blob/master/documentation/static-response-time.png)
 
-![Success rate](https://github.com/boulouk/firedex/blob/master/documentation/static-success-rate.png)
+![Success rate](https://github.com/lucascalz8/firedex/blob/master/documentation/static-success-rate.png)
 
 ## Running - FireDeX dynamic
 Run PyCharm (file _PY_CHARM_HOME/bin/pycharm.sh_) as root (sudo) and open the following projects in the _firedex-dynamic_ directory:
@@ -245,9 +245,9 @@ The default configuration runs 5 subscribers with ρ = 1.2 (network load).
 
 The following images show the performance experienced by subscriptions with different importance (high importance/priority vs. low importance/priority).
 
-![High priority subscription](https://github.com/boulouk/firedex/blob/master/documentation/dashboard-high-priority.png)
+![High priority subscription](https://github.com/lucascalz8/firedex/blob/master/documentation/dashboard.png)
 
-![Low priority subscription](https://github.com/boulouk/firedex/blob/master/documentation/dashboard-low-priority.png)
+![Low priority subscription](https://github.com/lucascalz8/firedex/blob/master/documentation/dashboard-low-priority.png)
 
 ## References
 
