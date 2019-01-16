@@ -156,7 +156,7 @@ Install [PyCharm](https://www.jetbrains.com/pycharm/) and [Eclipse](https://www.
 Download the FireDeX repository.
 
 ```
-git clone git://github.com/boulouk/firedex
+git clone git://github.com/lucascalz8/firedex
 ```
 
 ### Finishing up
@@ -201,7 +201,7 @@ The default configuration runs 5 subscribers with ρ = 1.2 (network load).
 
 The following image shows the performance experienced by subscriptions with different importance (high importance/priority vs. low importance/priority).
 
-![High priority subscription](https://github.com/lucascalz8/firedex/blob/master/documentation/dashboard.png)
+![Subscriptions with varying utility functions](https://github.com/lucascalz8/firedex/blob/master/documentation/dashboard.png)
 
 ## References
 
