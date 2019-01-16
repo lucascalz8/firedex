@@ -1,0 +1,105 @@
+{
+  "configuration": {
+    "broker": {
+      "host": "10.0.0.1",
+      "port": 1883
+    },
+    "publisher": {
+      "identifier": "pub0",
+      "host": "10.0.0.12",
+      "runningTime": 300,
+      "publications": [
+        {
+          "topic": "topic2",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        },
+        {
+          "topic": "topic3",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        },
+        {
+          "topic": "topic5",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        },
+        {
+          "topic": "topic1",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        },
+        {
+          "topic": "topic6",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        },
+        {
+          "topic": "topic0",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        },
+        {
+          "topic": "topic4",
+          "rateType": "random",
+          "rate": 10.0,
+          "messageSize": 51,
+          "qualityOfService": 0,
+          "retained": false
+        }
+      ]
+    },
+    "output": {
+      "logFile": "./result/log/pub0_log.log",
+      "outputFile": "./result/output/pub0_output.json"
+    }
+  },
+  "publicationsResult": [
+    {
+      "topic": "topic1",
+      "messages": 2762
+    },
+    {
+      "topic": "topic2",
+      "messages": 2975
+    },
+    {
+      "topic": "topic0",
+      "messages": 2959
+    },
+    {
+      "topic": "topic5",
+      "messages": 3028
+    },
+    {
+      "topic": "topic6",
+      "messages": 2990
+    },
+    {
+      "topic": "topic3",
+      "messages": 2858
+    },
+    {
+      "topic": "topic4",
+      "messages": 2978
+    }
+  ]
+}

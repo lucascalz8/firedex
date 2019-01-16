@@ -1,0 +1,58 @@
+{
+    "subscriber": {
+        "runningTime": 600, 
+        "host": "10.0.0.10", 
+        "identifier": "sub8", 
+        "subscriptions": [
+            {
+                "topic": "topic4", 
+                "time": 0, 
+                "utilityFunction": 3.3557354848008525
+            }, 
+            {
+                "topic": "topic3", 
+                "time": 0, 
+                "utilityFunction": 0.4740818868215441
+            }, 
+            {
+                "topic": "topic1", 
+                "time": 0, 
+                "utilityFunction": 0.8112841998001699
+            }, 
+            {
+                "topic": "topic0", 
+                "time": 0, 
+                "utilityFunction": 9.203043334212055
+            }, 
+            {
+                "topic": "topic2", 
+                "time": 0, 
+                "utilityFunction": 4.168308192854781
+            }, 
+            {
+                "topic": "topic5", 
+                "time": 0, 
+                "utilityFunction": 0.1788946544822299
+            }, 
+            {
+                "topic": "topic6", 
+                "time": 0, 
+                "utilityFunction": 10.099876832293674
+            }
+        ]
+    }, 
+    "output": {
+        "outputFile": "./result/output/sub8_output.json", 
+        "logFile": "./result/log/sub8_log.log"
+    }, 
+    "server": {
+        "middleware": {
+            "host": "10.0.2.15", 
+            "port": "8888"
+        }, 
+        "broker": {
+            "host": "10.0.0.1", 
+            "port": 20000
+        }
+    }
+}

@@ -1,0 +1,104 @@
+{
+  "configuration": {
+    "server": {
+      "middleware": {
+        "host": "10.0.2.15",
+        "port": 8888
+      },
+      "broker": {
+        "host": "10.0.0.1",
+        "port": 20000
+      }
+    },
+    "subscriber": {
+      "identifier": "sub0",
+      "host": "10.0.0.2",
+      "runningTime": 600,
+      "subscriptions": [
+        {
+          "topic": "topic6",
+          "utilityFunction": 0.9373424749915178,
+          "time": 0
+        },
+        {
+          "topic": "topic0",
+          "utilityFunction": 1.8043096312581117,
+          "time": 0
+        },
+        {
+          "topic": "topic4",
+          "utilityFunction": 8.100939438047458,
+          "time": 0
+        },
+        {
+          "topic": "topic1",
+          "utilityFunction": 9.708268961498135,
+          "time": 0
+        },
+        {
+          "topic": "topic3",
+          "utilityFunction": 2.5767575685499495,
+          "time": 0
+        },
+        {
+          "topic": "topic2",
+          "utilityFunction": 16.407484315843362,
+          "time": 0
+        },
+        {
+          "topic": "topic5",
+          "utilityFunction": 2.6269461404377425,
+          "time": 0
+        }
+      ]
+    },
+    "output": {
+      "logFile": "./result/log/sub0_log.log",
+      "outputFile": "./result/output/sub0_output.json"
+    }
+  },
+  "subscriptionsResult": [
+    {
+      "topic": "topic1",
+      "port": 10002,
+      "messages": 2161,
+      "latency": 68.21147616844054
+    },
+    {
+      "topic": "topic2",
+      "port": 10001,
+      "messages": 2975,
+      "latency": 77.61714285714285
+    },
+    {
+      "topic": "topic0",
+      "port": 10006,
+      "messages": 918,
+      "latency": 364.8921568627451
+    },
+    {
+      "topic": "topic5",
+      "port": 10004,
+      "messages": 1477,
+      "latency": 131.2193635748138
+    },
+    {
+      "topic": "topic6",
+      "port": 10007,
+      "messages": 721,
+      "latency": 416.6518723994452
+    },
+    {
+      "topic": "topic3",
+      "port": 10005,
+      "messages": 1098,
+      "latency": 226.35245901639345
+    },
+    {
+      "topic": "topic4",
+      "port": 10003,
+      "messages": 1817,
+      "latency": 80.55751238304899
+    }
+  ]
+}

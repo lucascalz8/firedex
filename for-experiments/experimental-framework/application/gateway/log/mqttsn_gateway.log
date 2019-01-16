@@ -1,0 +1,14 @@
+
+16 Jan 2019 06:41:21 PST  INFO:  -----------------------------------------Mqtts Gateway starting----------------------------------------
+16 Jan 2019 06:41:21 PST  INFO:  Loading Mqtts Gateway parameters....
+16 Jan 2019 06:41:21 PST  INFO:  Gateway paremeters loaded.
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - Establishing TCP/IP connection with 127.0.0.1
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - TCP/IP connection established.
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - Establishing MQTT connection with the broker...
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - Mqtt connection established.
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - Initializing all available Client interfaces...
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - org.eclipse.paho.mqttsn.gateway.client.udp.UDPClientInterface initialized.
+16 Jan 2019 06:41:21 PST  INFO:  GatewayMsgHandler [18]/[Gateway_24] - Broadcasting initial Mqtts ADVERTISE message...
+16 Jan 2019 06:41:21 PST  INFO:  -------- Mqtts Gateway started --------
+16 Jan 2019 06:55:20 PST  INFO:  -------- Mqtts Gateway shutting down --------
+16 Jan 2019 06:55:20 PST  INFO:  -------- Mqtts Gateway stopped --------
