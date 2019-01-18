@@ -1,6 +1,6 @@
 # Firedex
 
-FireDeX is a cross-layer middleware that facilitates timely and effective exchange of data for coordinating emergency response activities. Emergency scenarios may challenge/congest the network infrastructure. FireDeX addresses these situations by prioritizing event delivery and by dropping some low priority events. It adopts a publish-subscribe data exchange paradigm with brokers at the network edge to manage prioritized delivery of mission-critical data from IoT sources to relevant subscribers.
+FireDeX is a cross-layer middleware that supports timely delivery of mission-critical messages (i.e. events) over an IoT data exchange service. Emergency scenarios may challenge or congest the network infrastructure. FireDeX addresses these situations by prioritizing event delivery and by dropping some low priority events.
 
 See [1, 2] for more details on the FireDeX middleware.
 
@@ -12,14 +12,7 @@ These instructions will get you a copy of the FireDeX project up and running on 
 Install [VirtualBox](https://www.virtualbox.org/).  
 Install [Ubuntu 14.04](http://releases.ubuntu.com/14.04/).
 
-## Installing - Option 1 (easy, recommended)
-Download the [FireDeX Virtual Machine](https://drive.google.com/open?id=13HCe2FB2J-KxWhJDb8zuDfxpH3_lhk9U). Then, import the FireDeX.ova file in VirtualBox and launch the Virtual Machine.
-
-Note:  
-username = firedex  
-password = firedex
-
-## Installing - Option 2 (advanced, from source)
+## Installing
 These steps will walk you trough the installation of the FireDeX project from scratch (clean Ubuntu Virtual Machine).  
 
 To install:
@@ -164,7 +157,7 @@ Finally you need to import the project dependencies (make sure that you are usin
 
 #### FireDeX dependencies
 
-Run PyCharm (file _PY_CHARM_HOME/bin/pycharm.sh_) as root (sudo) and open the following projects in the _firedex-dynamic_ directory:
+Run PyCharm (file _PY_CHARM_HOME/bin/pycharm.sh_) as root (sudo) and open the following projects in the _firedex_ directory:
 - experimental-framework
 - sdn-controller
 - firedex-coordinator-service
@@ -175,7 +168,7 @@ Import the following dependencies:
 - firedex-coordinator-service -> flask, numpy, cvxpy, requests
 
 ## Running
-Run PyCharm (file _PY_CHARM_HOME/bin/pycharm.sh_) as root (sudo) and open the following projects in the _firedex-dynamic_ directory:
+Run PyCharm (file _PY_CHARM_HOME/bin/pycharm.sh_) as root (sudo) and open the following projects in the _firedex_ directory:
 - experimental-framework
 - sdn-controller
 - firedex-coordinator-service
